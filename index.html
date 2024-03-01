@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addtocart</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <div class="container-fluid main1" style="position: relative;" >
+    <i class="fa-solid fa-cart-shopping  cart"></i>
+    <i class="fa-regular fa-circle cart1 "></i>
+    <i class=" fa-regular fa-circle-xmark cart3 " id="remove" style="position: absolute; top: 30px; right: 150px;" onclick="clear()"></i>
+    <i class="fa-regular fa-square cart4" ></i>
+    <p id="stockminus"  style="position: absolute; top: 60px; right: 150px; color: orangered; font-size: 30px;"></p>
+    <p id="cash" class="CA"  style="position: absolute; top: 70px; right: 85px;  color: blue; font-size: 20px;"></p>
+
+ 
+  </div>
+
+
+    <div class="container-fluid  d-flex justify-content-center  main_div">
+        <div class="pt-5 mt-5 ">
+            <h1 class="text-light text-center">BEAUTY PRODUCTS</h1>
+            <p class="text-light">Makeup can make a woman look more beautiful at every age
+            </p>
+            <button type="button" class="btn btn-danger d-block m-auto">GET STARTED NOW</button>
+           
+          
+           
+        </div>
+    </div>
+
+
+    <div class="container-fluid main3">
+     
+    </div>
+
+    <div>
+      <h1 class="names text-center pt-5">BESTSELLERS</h1>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row d-flex justify-content-between align-content-center">
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/foundation.webp " class="card-img-top images  " alt="..." style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">FOUNDATION,<span class="price">$60</span></h5>
+                <p class="card-text text-center"> Matte foundations are a type of face foundation that provide a non-shiny finish to the skin.
+                
+                </p>
+                <p class="text-center">Stock: <span id="stock1"> 10</span></p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="one()">AddtoCart</a>
+               
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/pic2.jpg " class="card-img-top images  " alt="..." style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">CONCEALER,<span class="price">$20</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock:<span id="stock2"> 13</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="two()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          
+          
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/red.webp " class="card-img-top images  " alt="..."  style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">LIPSTICK,<span class="price">$35</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock:<span id="stock3"> 18</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="three()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/pic4.jpg " class="card-img-top images  " alt="..." style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">EYELINER,<span class="price">$65</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock: <span id="stock4"> 3</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="four()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/pic5.jpg " class="card-img-top images  " alt="..."  style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">EYESHADOW,<span class="price">$20</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock:<span id="stock5"> 6</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="five()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/pic6.jpg " class="card-img-top images  " alt="..."  style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">PRIMER,<span class="price">$40</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                 
+                </p>
+                <p class="text-center">Stock: <span id="stock6"> 5</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="six()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/-original-imagufecywfu66x2.webp" class="card-img-top images  " alt="..."  style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">MASCARA,<span class="price">$80</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock: <span id="stock7"> 7</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="seven()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="card  m-auto" style="width: 16rem;">
+              <img src="./images/blush.webp " class="card-img-top images  " alt="..."  style="height: 240px;">
+              <div class="card-body">
+                <h5 class="card-title text-center">BLUSH,<span class="price">$50</span></h5>
+                <p class="card-text text-center">Matte foundations are a type of face foundation that provide a non-shiny finish to the skin
+                </p>
+                <p class="text-center">Stock:<span id="stock8"> 16</span> </p>
+                <a href="#" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="eight()">AddtoCart</a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

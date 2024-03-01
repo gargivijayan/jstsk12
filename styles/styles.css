@@ -1,0 +1,61 @@
+.main_div{
+    
+    background-image: url("../images/pic.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+
+.main1{
+    background-image: url("../images/first.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 270px;
+
+}
+
+.main3{
+    background-image: url("../images/sale.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.price{
+    color: orangered;
+    font-size: 30px;
+}
+
+.stock{
+    color: blue;
+    font-size: 25px;
+}
+
+.cart{
+    font-size: 60px;
+    color: darkblue;
+    padding-left: 1050px;
+    padding-top: 50px;
+}
+
+
+.cart1{
+    font-size: 65px;
+    color: rgb(235, 202, 16);
+    
+
+}
+.cart3{
+    color: red;
+    font-size: 20px;
+    
+   
+}
+.cart4{
+    font-size: 60px;
+    color: rgb(235, 202, 16);
+   
+}
